@@ -2,7 +2,7 @@
 
 namespace App\DataFixtures;
 
-use Cocur\Slugify\SlugifyInterface;
+use Cocur\Slugify\Slugify;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
