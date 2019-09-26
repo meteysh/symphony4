@@ -6,6 +6,7 @@ use Cocur\Slugify\Slugify;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
+use App\Entity\Post;
 
 class AppFixtures extends Fixture
 {
@@ -25,6 +26,7 @@ class AppFixtures extends Fixture
         // $manager->persist($product);
 
         $manager->flush();
+        $this->loadPosts($manager);
     }
 
     public function loadPosts(ObjectManager $manager)

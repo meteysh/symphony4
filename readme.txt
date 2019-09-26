@@ -15,6 +15,11 @@ composer require fzaninotto/faker скачаем популярную библи
 composer require cocur/slugify библиотека cocur/slugify, делающая slug как из английских слов, так и из русских
 
 
+return $this->render('posts/index.html.twig', [
+     'posts' => $posts,
+ ]);
+!!!!!!именно 'posts', а не $posts, шаблонизатор Twig будете видеть в качестве переменной. !!!!!!!
+
 {% %} делаем
 {{ }} выводим
 
