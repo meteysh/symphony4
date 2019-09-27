@@ -23,8 +23,8 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-    App\DataFixtures\AppFixtures:
-        $slugify: '@Cocur\Slugify\Slugify'
+    # App\DataFixtures\AppFixtures:
+    #     $slugify: '@Cocur\Slugify\Slugify'
     Cocur\Slugify\Slugify:
         autowire: true
 

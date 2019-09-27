@@ -8,6 +8,7 @@ php bin/console make:entity Post  создать сущность
 php bin/console make:migration выполнить миграцию
 php bin/console doctrine:migrations:migrate применить миграцию
 php bin/console doctrine:fixtures:load запустить наши фикстуры
+php bin/console make:form  создать форму
 php bin/console cache:clear чистка кэша
 
 composer require --dev doctrine/doctrine-fixtures-bundle скачать DoctrineFixturesBundle
